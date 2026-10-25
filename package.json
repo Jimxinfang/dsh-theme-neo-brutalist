@@ -1,0 +1,93 @@
+{
+  "name": "dsh-theme-neo-brutalist",
+  "version": "0.1.0",
+  "description": "Neo-Brutalist theme bundle for the DeepSeek Harness Web UI: thick black rules, hard 8px shadows, zero rounding, acid-green/pink/cyan signal colors, and a calm reading plane. 新粗野主义主题：硬边、硬阴影、零圆角、酸绿/荧光粉/电蓝信号色。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "neo-brutalism",
+    "neo-brutalist",
+    "brutalist",
+    "dark-theme"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "DESIGN.md",
+    "LICENSE",
+    "docs/",
+    "scripts/"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-store",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-locale": "*",
+    "@deepseek-ai/dsh-client-store": "*",
+    "@deepseek-ai/dsh-client-ui-theme": "*",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-locale": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-store": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-theme": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "test": "node --test test/*.test.mjs"
+  },
+  "icon": "./icon.svg",
+  "author": "dsh-theme-neo-brutalist contributors",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jimxinfang/dsh-theme-neo-brutalist.git"
+  },
+  "homepage": "https://github.com/Jimxinfang/dsh-theme-neo-brutalist#readme",
+  "bugs": {
+    "url": "https://github.com/Jimxinfang/dsh-theme-neo-brutalist/issues"
+  }
+}

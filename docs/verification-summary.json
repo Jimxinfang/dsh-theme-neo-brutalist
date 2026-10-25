@@ -1,0 +1,936 @@
+{
+  "runId": "2026-10-25T03-17-33-neo-brutalist",
+  "startedAt": "2026-10-25T03:17:33.759Z",
+  "finishedAt": "2026-10-25T03:18:27.576Z",
+  "durationMs": 53817,
+  "harness": {
+    "node": "v24.11.1",
+    "platform": "darwin",
+    "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "dshCli": "/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh",
+    "dshHome": "/private/tmp/dsh-theme-qa/home",
+    "profile": "web",
+    "artifactsDir": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist"
+  },
+  "config": {
+    "rowText": "Neo-Brutalist",
+    "lightCard": "白纸",
+    "darkCard": "黑板",
+    "restoreCard": "出厂",
+    "bodyMarker": "body[data-dsh-neo-brutalist]",
+    "bodyAttr": "data-dsh-neo-brutalist",
+    "styleTarget": "(auto: [data-composer-card] else body)",
+    "expects": {
+      "light": {
+        "radius": "0px",
+        "shadow": "8px 8px 0",
+        "bg": "rgb(255, 255, 255)",
+        "bodyBg": "rgb(255, 255, 255)",
+        "attrValue": "paper"
+      },
+      "dark": {
+        "radius": "0px",
+        "shadow": "8px 8px 0",
+        "bg": "",
+        "bodyBg": "rgb(0, 0, 0)",
+        "attrValue": "ink"
+      }
+    },
+    "minDiffRatio": 0.001,
+    "resolvedStyleTarget": "[data-composer-card]"
+  },
+  "profile": {
+    "dependencies": [
+      "dsh-theme-neo-brutalist@link:/Users/lijiaming/Documents/workspace/deepseek/dsh-theme-neo-brutalist"
+    ],
+    "bundles": [
+      "@deepseek-ai/dsh-base",
+      "@deepseek-ai/dsh-web-app",
+      "dsh-theme-neo-brutalist"
+    ]
+  },
+  "server": {
+    "url": "http://127.0.0.1:63255/?token=<redacted>",
+    "origin": "http://127.0.0.1:63255",
+    "port": 63255,
+    "pid": 67454,
+    "startedByHarness": true,
+    "log": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/server.log"
+  },
+  "steps": [
+    {
+      "name": "start dsh web server",
+      "at": "2026-10-25T03:17:33.935Z",
+      "detail": "port 63255, DSH_HOME=/private/tmp/dsh-theme-qa/home"
+    },
+    {
+      "name": "open token URL and wait for app shell",
+      "at": "2026-10-25T03:17:35.809Z"
+    },
+    {
+      "name": "open Settings -> 通用 (General)",
+      "at": "2026-10-25T03:17:37.258Z"
+    },
+    {
+      "name": "locate theme row and classify variant cards",
+      "at": "2026-10-25T03:17:41.086Z"
+    },
+    {
+      "name": "reset to factory appearance before baseline",
+      "at": "2026-10-25T03:17:41.239Z"
+    },
+    {
+      "name": "click light variant card",
+      "at": "2026-10-25T03:17:43.999Z"
+    },
+    {
+      "name": "open Settings -> 通用 (General)",
+      "at": "2026-10-25T03:17:49.329Z"
+    },
+    {
+      "name": "locate theme row and classify variant cards",
+      "at": "2026-10-25T03:17:52.623Z"
+    },
+    {
+      "name": "click dark variant card",
+      "at": "2026-10-25T03:17:52.626Z"
+    },
+    {
+      "name": "switch viewport to 390x844 and screenshot mobile shell",
+      "at": "2026-10-25T03:17:56.757Z"
+    },
+    {
+      "name": "open Settings -> 通用 (General)",
+      "at": "2026-10-25T03:17:59.561Z"
+    },
+    {
+      "name": "locate theme row and classify variant cards",
+      "at": "2026-10-25T03:18:02.871Z"
+    },
+    {
+      "name": "click restore (出厂/默认) card",
+      "at": "2026-10-25T03:18:02.873Z"
+    }
+  ],
+  "states": {
+    "autoApply": {
+      "preResetMarkerAttr": "paper",
+      "preResetBodyBg": "rgb(255, 255, 255)",
+      "preResetThemeTokens": 80,
+      "preResetMarkerSelectorPresent": true,
+      "preResetScreenshot": {
+        "name": "00a-first-load-before-factory-reset-1440x900",
+        "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/00a-first-load-before-factory-reset-1440x900.png",
+        "width": 1440,
+        "height": 900,
+        "bytes": 103640,
+        "distinctColors": 473,
+        "luminanceMean": 205.26,
+        "luminanceStdDev": 52.51
+      }
+    },
+    "baselineScrollTop": 419,
+    "baseline": {
+      "nonStyleAttrs": {},
+      "styleAttr": "--dsh-content-font-size: 14px; --dsh-code-font-size: 11px; --dsh-terminal-font-size: 13px;",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(15, 17, 21)",
+      "markerSelectorPresent": false,
+      "themeVars": {
+        "--dsw-alias-bg-base": "#fff",
+        "--dsw-alias-brand-primary": "#0f1115",
+        "--dsw-specific-input-major": "#fff"
+      },
+      "targetStyle": {
+        "selector": "[data-composer-card]",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "28px",
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.03) 0px 4px 16px 0px, rgba(0, 0, 0, 0.03) 0px 0px 24px 0px",
+        "color": "rgb(15, 17, 21)"
+      },
+      "cards": [
+        {
+          "role": "restore",
+          "text": "出厂外观恢复 DSH 内置主题",
+          "pressed": "true",
+          "checked": null,
+          "borderColor": "rgb(15, 17, 21)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 0, 0, 0.1) 5px 5px 0px 0px",
+          "transform": "matrix(1, 0, 0, 1, -2, -2)"
+        },
+        {
+          "role": "light",
+          "text": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 0, 0, 0.1) 3px 3px 0px 0px",
+          "transform": "none"
+        },
+        {
+          "role": "dark",
+          "text": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgba(0, 0, 0, 0.1)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 0, 0, 0.1) 3px 3px 0px 0px",
+          "transform": "none"
+        }
+      ]
+    },
+    "factoryReset": {
+      "performed": true,
+      "preResetMarkerAttr": "paper",
+      "postResetMarkerAttr": null,
+      "preResetThemed": true
+    },
+    "light": {
+      "nonStyleAttrs": {
+        "data-dsh-neo-brutalist": "paper"
+      },
+      "styleAttr": "--dsh-content-font-size: 14px; --dsh-code-font-size: 11px; --dsh-terminal-font-size: 13px; --dsw-alias-bg-base: #ffffff; --dsw-alias-bg-layer-1: #ffffff; --dsw-alias-bg-layer-2: #f2f2f2; --dsw-alias-bg-layer-3: #e3e3e3; --dsw-alias-bg-overlay: #ffffff; --dsw-alias-bg-module-platform: #f2f2f2; --dsw-alias-bg-multi-select: #ccff00; --dsw-alias-bg-skeleton: rgba(0,0,0,.08); --dsw-alias-bg-document-preview: #f2f2f2; --dsw-alias-label-document-preview: #3a3a3a; --dsw-alias-border-l1: #000000; --dsw-alias-border-l2-darkmode-thin: #000000; --dsw-alias-border-l2: #000000; --dsw-alias-border-l3: #000000; --dsw-alias-border-l4: #000000; --dsw-alias-border-inverted: #000000; --dsw-alias-border-inverted2: #000000; --dsw-alias-brand-primary: #ccff00; --dsw-alias-brand-primary-invert: #000000; --dsw-alias-brand-text: #000000; --dsw-alias-button-primary-fill: #ccff00; --dsw-alias-button-primary-hover: #b3e600; --dsw-alias-button-primary-dimmed: #e6ff99; --dsw-alias-button-info-fill: #00d9ff; --dsw-alias-button-info-hover: #66e7ff; --dsw-alias-button-elevated-fill: #ffffff; --dsw-alias-button-floating-fill: #ffffff; --dsw-alias-button-floating-hover: #f2f2f2; --dsw-alias-button-ghost-active-border: #000000; --dsw-alias-button-ghost-active-fill: #ccff00; --dsw-alias-button-ghost-active-hover: #b3e600; --dsw-alias-button-contrast-fill: #000000; --dsw-alias-interactive-bg-active: #ccff00; --dsw-alias-interactive-bg-hover-accent: #d9f8ff; --dsw-alias-interactive-bg-hover-danger: #ffe0ea; --dsw-alias-interactive-bg-hover-solid: #000000; --dsw-alias-interactive-bg-hover: #f2f2f2; --dsw-alias-label-primary: #000000; --dsw-alias-label-primary-bluish: #000000; --dsw-alias-label-primary-dimmed: #1a1a1a; --dsw-alias-label-primary-foreground: #000000; --dsw-alias-label-primary-inverted: #ffffff; --dsw-alias-label-secondary: #3a3a3a; --dsw-alias-label-tertiary: #5c5c5c; --dsw-alias-label-caption: #5c5c5c; --dsw-alias-label-dimmed: #8a8a8a; --dsw-alias-label-shimmer: rgba(0,0,0,.3); --dsw-alias-link: #006b85; --dsw-alias-menu-icon: #000000; --dsw-alias-markdown-code-block: #f5f5f5; --dsw-alias-markdown-code-block-banner: #e3e3e3; --dsw-alias-markdown-inline-code: #ccff00; --dsw-alias-markdown-placeholder: #f2f2f2; --dsw-alias-markdown-tag: #ff006e; --dsw-alias-markdown-citation: #f2f2f2; --dsw-alias-scrollbar-bg-l1: #b3b3b3; --dsw-alias-scrollbar-bg-l2: #000000; --dsw-alias-scrollbar-hover-l1: #ff006e; --dsw-alias-scrollbar-hover-l2: #ccff00; --dsw-alias-state-business-primary: #006b85; --dsw-alias-state-business-tertiary: #d9f8ff; --dsw-alias-state-idle-primary: #b3b3b3; --dsw-alias-state-success-primary: #0a7d3c; --dsw-alias-state-success-secondary: #0f9e4e; --dsw-alias-state-success-tertiary: #d9f7e5; --dsw-alias-state-warn-label: #8a4a00; --dsw-alias-state-warn-primary: #ff9500; --dsw-alias-state-warn-secondary: #ffb340; --dsw-alias-state-warn-tertiary: #fff0d9; --dsw-alias-state-error-primary: #d1003f; --dsw-alias-state-error-secondary: #ff006e; --dsw-alias-code-diff-added: #0a7d3c1a; --dsw-alias-code-diff-deleted: #d1003f1a; --dsw-alias-toast-bg: #000000; --dsw-alias-toast-label: #ffffff; --dsw-alias-tooltip-bg: #000000; --dsw-alias-tooltip-key-bg: #333333; --dsw-alias-switch-thumb: #ffffff; --dsw-alias-turn-trigger-bg: #fff9cc; --dsw-alias-turn-trigger-bg-hover: #ccff00; --dsw-focus-ring-color: #ff006e; --dsw-focus-ring-width: 3px; --dsw-specific-bubble: #ffffff; --dsw-specific-bubble-highlight: #f2f2f2; --dsw-specific-input-major: #ffffff; --dsw-specific-login-input: #ffffff; --dsw-specific-menu: #ffffff; --dsw-specific-selector: #ffffff; --dsw-specific-sidebar-fill: #f7f7f7; --dsw-specific-sidebar-nav-item-active-accent: #ccff00; --dsw-specific-sidebar-nav-item-active: #ccff00; --dsw-specific-sidebar-nav-item-hover: #e3e3e3; --dsw-specific-tip: #fff3cc; --dsw-elevation-stroke-color: #000000;",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "markerSelectorPresent": true,
+      "themeVars": {
+        "--dsw-alias-bg-base": "#ffffff",
+        "--dsw-alias-brand-primary": "#ccff00",
+        "--dsw-specific-input-major": "#ffffff"
+      },
+      "targetStyle": {
+        "selector": "[data-composer-card]",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "rgb(0, 0, 0) 8px 8px 0px 0px",
+        "color": "rgb(0, 0, 0)"
+      },
+      "cards": [
+        {
+          "role": "restore",
+          "text": "出厂外观恢复 DSH 内置主题",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgb(0, 0, 0) 3px 3px 0px 0px",
+          "transform": "none"
+        },
+        {
+          "role": "light",
+          "text": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+          "pressed": "true",
+          "checked": null,
+          "borderColor": "rgb(204, 255, 0)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgb(0, 0, 0) 5px 5px 0px 0px",
+          "transform": "matrix(1, 0, 0, 1, -2, -2)"
+        },
+        {
+          "role": "dark",
+          "text": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgb(0, 0, 0) 3px 3px 0px 0px",
+          "transform": "none"
+        }
+      ],
+      "marker": {
+        "present": true,
+        "auto": true,
+        "extraAttrs": [
+          "data-dsh-neo-brutalist"
+        ],
+        "changedValueAttrs": [],
+        "bgChanged": false,
+        "styleChanged": true,
+        "selectorPresent": true
+      },
+      "styleTarget": {
+        "selector": "[data-composer-card]",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "rgb(0, 0, 0) 8px 8px 0px 0px",
+        "color": "rgb(0, 0, 0)"
+      },
+      "expectations": {
+        "radius": "0px",
+        "shadow": "8px 8px 0",
+        "bg": "rgb(255, 255, 255)",
+        "bodyBg": "rgb(255, 255, 255)",
+        "attrValue": "paper"
+      }
+    },
+    "dark": {
+      "nonStyleAttrs": {
+        "data-dsh-neo-brutalist": "ink",
+        "data-ds-dark-theme": ""
+      },
+      "styleAttr": "--dsh-content-font-size: 14px; --dsh-code-font-size: 11px; --dsh-terminal-font-size: 13px; --dsw-alias-bg-base: #000000; --dsw-alias-bg-layer-1: #0a0a0a; --dsw-alias-bg-layer-2: #141414; --dsw-alias-bg-layer-3: #1f1f1f; --dsw-alias-bg-overlay: #0a0a0a; --dsw-alias-bg-module-platform: #050505; --dsw-alias-bg-multi-select: #ccff00; --dsw-alias-bg-skeleton: rgba(255,255,255,.1); --dsw-alias-bg-document-preview: #141414; --dsw-alias-label-document-preview: #e0e0e0; --dsw-alias-border-l1: rgba(255,255,255,.35); --dsw-alias-border-l2-darkmode-thin: rgba(255,255,255,.5); --dsw-alias-border-l2: #ffffff; --dsw-alias-border-l3: #ffffff; --dsw-alias-border-l4: #ffffff; --dsw-alias-border-inverted: #000000; --dsw-alias-border-inverted2: #000000; --dsw-alias-brand-primary: #ccff00; --dsw-alias-brand-primary-invert: #000000; --dsw-alias-brand-text: #ccff00; --dsw-alias-button-primary-fill: #ccff00; --dsw-alias-button-primary-hover: #e5ff66; --dsw-alias-button-primary-dimmed: #3d4d00; --dsw-alias-button-info-fill: #00d9ff; --dsw-alias-button-info-hover: #66e7ff; --dsw-alias-button-elevated-fill: #141414; --dsw-alias-button-floating-fill: #141414; --dsw-alias-button-floating-hover: #1f1f1f; --dsw-alias-button-ghost-active-border: #ffffff; --dsw-alias-button-ghost-active-fill: #1f1f1f; --dsw-alias-button-ghost-active-hover: #2b2b2b; --dsw-alias-button-contrast-fill: #ffffff; --dsw-alias-interactive-bg-active: #ccff00; --dsw-alias-interactive-bg-hover-accent: #003d4d; --dsw-alias-interactive-bg-hover-danger: #4d001f; --dsw-alias-interactive-bg-hover-solid: #1f1f1f; --dsw-alias-interactive-bg-hover: #1f1f1f; --dsw-alias-label-primary: #ffffff; --dsw-alias-label-primary-bluish: #ffffff; --dsw-alias-label-primary-dimmed: #f2f2f2; --dsw-alias-label-primary-foreground: #000000; --dsw-alias-label-primary-inverted: #000000; --dsw-alias-label-secondary: #e0e0e0; --dsw-alias-label-tertiary: #b3b3b3; --dsw-alias-label-caption: #b3b3b3; --dsw-alias-label-dimmed: #808080; --dsw-alias-label-shimmer: rgba(255,255,255,.45); --dsw-alias-link: #66e6ff; --dsw-alias-menu-icon: #ffffff; --dsw-alias-markdown-code-block: #0a0a0a; --dsw-alias-markdown-code-block-banner: #141414; --dsw-alias-markdown-inline-code: #ccff00; --dsw-alias-markdown-placeholder: #141414; --dsw-alias-markdown-tag: #ff006e; --dsw-alias-markdown-citation: #141414; --dsw-alias-scrollbar-bg-l1: #3a3a3a; --dsw-alias-scrollbar-bg-l2: #ffffff; --dsw-alias-scrollbar-hover-l1: #ff4d8d; --dsw-alias-scrollbar-hover-l2: #ccff00; --dsw-alias-state-business-primary: #00d9ff; --dsw-alias-state-business-tertiary: #003d4d; --dsw-alias-state-idle-primary: #4d4d4d; --dsw-alias-state-success-primary: #3ddc84; --dsw-alias-state-success-secondary: #6be3a0; --dsw-alias-state-success-tertiary: #0b3d24; --dsw-alias-state-warn-label: #ffb340; --dsw-alias-state-warn-primary: #ff9500; --dsw-alias-state-warn-secondary: #ffb340; --dsw-alias-state-warn-tertiary: #4d2b00; --dsw-alias-state-error-primary: #ff4d8d; --dsw-alias-state-error-secondary: #ff80ad; --dsw-alias-code-diff-added: #3ddc841a; --dsw-alias-code-diff-deleted: #ff4d8d1a; --dsw-alias-toast-bg: #ccff00; --dsw-alias-toast-label: #000000; --dsw-alias-tooltip-bg: #1f1f1f; --dsw-alias-tooltip-key-bg: #3a3a3a; --dsw-alias-switch-thumb: #ccff00; --dsw-alias-turn-trigger-bg: #1f1f1f; --dsw-alias-turn-trigger-bg-hover: #2b2b2b; --dsw-focus-ring-color: #ff4d8d; --dsw-focus-ring-width: 3px; --dsw-specific-bubble: #0a0a0a; --dsw-specific-bubble-highlight: #1f1f1f; --dsw-specific-input-major: #000000; --dsw-specific-login-input: #0a0a0a; --dsw-specific-menu: #0a0a0a; --dsw-specific-selector: #0a0a0a; --dsw-specific-sidebar-fill: #050505; --dsw-specific-sidebar-nav-item-active-accent: #ccff00; --dsw-specific-sidebar-nav-item-active: #ccff00; --dsw-specific-sidebar-nav-item-hover: #1f1f1f; --dsw-specific-tip: #141414; --dsw-elevation-stroke-color: #ffffff;",
+      "bodyBg": "rgb(0, 0, 0)",
+      "bodyColor": "rgb(255, 255, 255)",
+      "markerSelectorPresent": true,
+      "themeVars": {
+        "--dsw-alias-bg-base": "#000000",
+        "--dsw-alias-brand-primary": "#ccff00",
+        "--dsw-specific-input-major": "#000000"
+      },
+      "targetStyle": {
+        "selector": "[data-composer-card]",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "rgb(204, 255, 0) 8px 8px 0px 0px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "cards": [
+        {
+          "role": "restore",
+          "text": "出厂外观恢复 DSH 内置主题",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(10, 10, 10)",
+          "boxShadow": "rgb(255, 255, 255) 3px 3px 0px 0px",
+          "transform": "none"
+        },
+        {
+          "role": "light",
+          "text": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(10, 10, 10)",
+          "boxShadow": "rgb(255, 255, 255) 3px 3px 0px 0px",
+          "transform": "none"
+        },
+        {
+          "role": "dark",
+          "text": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+          "pressed": "true",
+          "checked": null,
+          "borderColor": "rgb(204, 255, 0)",
+          "backgroundColor": "rgb(10, 10, 10)",
+          "boxShadow": "rgb(255, 255, 255) 5px 5px 0px 0px",
+          "transform": "matrix(1, 0, 0, 1, -2, -2)"
+        }
+      ],
+      "marker": {
+        "present": true,
+        "auto": true,
+        "extraAttrs": [
+          "data-dsh-neo-brutalist",
+          "data-ds-dark-theme"
+        ],
+        "changedValueAttrs": [],
+        "bgChanged": true,
+        "styleChanged": true,
+        "selectorPresent": true
+      },
+      "styleTarget": {
+        "selector": "[data-composer-card]",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "rgb(204, 255, 0) 8px 8px 0px 0px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "expectations": {
+        "radius": "0px",
+        "shadow": "8px 8px 0",
+        "bg": "",
+        "bodyBg": "rgb(0, 0, 0)",
+        "attrValue": "ink"
+      }
+    },
+    "restored": {
+      "nonStyleAttrs": {},
+      "styleAttr": "--dsh-content-font-size: 14px; --dsh-code-font-size: 11px; --dsh-terminal-font-size: 13px;",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(15, 17, 21)",
+      "markerSelectorPresent": false,
+      "themeVars": {
+        "--dsw-alias-bg-base": "#fff",
+        "--dsw-alias-brand-primary": "#0f1115",
+        "--dsw-specific-input-major": "#fff"
+      },
+      "targetStyle": {
+        "selector": "[data-composer-card]",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "28px",
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.03) 0px 4px 16px 0px, rgba(0, 0, 0, 0.03) 0px 0px 24px 0px",
+        "color": "rgb(15, 17, 21)"
+      },
+      "cards": [
+        {
+          "role": "restore",
+          "text": "出厂外观恢复 DSH 内置主题",
+          "pressed": "true",
+          "checked": null,
+          "borderColor": "rgb(15, 17, 21)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 0, 0, 0.1) 5px 5px 0px 0px",
+          "transform": "matrix(1, 0, 0, 1, -2, -2)"
+        },
+        {
+          "role": "light",
+          "text": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgba(0, 0, 0, 0.1)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 0, 0, 0.1) 3px 3px 0px 0px",
+          "transform": "none"
+        },
+        {
+          "role": "dark",
+          "text": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+          "pressed": "false",
+          "checked": null,
+          "borderColor": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 0, 0, 0.1) 3px 3px 0px 0px",
+          "transform": "none"
+        }
+      ],
+      "marker": {
+        "present": false,
+        "auto": false,
+        "extraAttrs": [],
+        "changedValueAttrs": [],
+        "bgChanged": false,
+        "styleChanged": false,
+        "selectorPresent": false
+      }
+    }
+  },
+  "screenshots": [
+    {
+      "name": "00a-first-load-before-factory-reset-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/00a-first-load-before-factory-reset-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 103640,
+      "distinctColors": 473,
+      "luminanceMean": 205.26,
+      "luminanceStdDev": 52.51
+    },
+    {
+      "name": "00-baseline-settings-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/00-baseline-settings-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 122803,
+      "distinctColors": 1666,
+      "luminanceMean": 219.09,
+      "luminanceStdDev": 37.12
+    },
+    {
+      "name": "01-light-settings-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/01-light-settings-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 105253,
+      "distinctColors": 473,
+      "luminanceMean": 205.22,
+      "luminanceStdDev": 52.52
+    },
+    {
+      "name": "02-light-shell-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/02-light-shell-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 38545,
+      "distinctColors": 575,
+      "luminanceMean": 247.93,
+      "luminanceStdDev": 36.03
+    },
+    {
+      "name": "03-dark-settings-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/03-dark-settings-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 103594,
+      "distinctColors": 509,
+      "luminanceMean": 23.62,
+      "luminanceStdDev": 52.03
+    },
+    {
+      "name": "04-dark-shell-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/04-dark-shell-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 38551,
+      "distinctColors": 604,
+      "luminanceMean": 7,
+      "luminanceStdDev": 36.59
+    },
+    {
+      "name": "05-dark-mobile-390x844",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/05-dark-mobile-390x844.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 21270,
+      "distinctColors": 566,
+      "luminanceMean": 12.99,
+      "luminanceStdDev": 51.74
+    },
+    {
+      "name": "06-restored-settings-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/06-restored-settings-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 122803,
+      "distinctColors": 1666,
+      "luminanceMean": 219.09,
+      "luminanceStdDev": 37.12
+    },
+    {
+      "name": "07-restored-shell-1440x900",
+      "file": "/private/tmp/dsh-theme-qa/artifacts/2026-10-25T03-17-33-neo-brutalist/07-restored-shell-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 41060,
+      "distinctColors": 1292,
+      "luminanceMean": 252.88,
+      "luminanceStdDev": 13.67
+    }
+  ],
+  "console": {
+    "errors": [],
+    "pageErrors": [],
+    "warnings": [],
+    "info": []
+  },
+  "assertions": [
+    {
+      "name": "app shell loaded (token auth accepted)",
+      "pass": true,
+      "expected": "app shell visible",
+      "actual": "visible"
+    },
+    {
+      "name": "Settings → 通用 opened and plugin theme row is present",
+      "pass": true,
+      "expected": "row text \"Neo-Brutalist\"",
+      "actual": "present"
+    },
+    {
+      "name": "theme row variant cards classified",
+      "pass": true,
+      "expected": "light=\"白纸\", dark=\"黑板\", restore=\"出厂\"",
+      "actual": {
+        "light": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+        "dark": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+        "restore": "出厂外观恢复 DSH 内置主题"
+      }
+    },
+    {
+      "name": "variant cards matched by text (not positional fallback)",
+      "pass": true,
+      "expected": "both cards matched via env text patterns",
+      "actual": {
+        "lightExplicit": true,
+        "darkExplicit": true
+      },
+      "soft": true
+    },
+    {
+      "name": "plugin auto-applied its theme on first load (before factory reset)",
+      "pass": true,
+      "expected": "body has data-dsh-neo-brutalist",
+      "actual": {
+        "markerAttr": "paper",
+        "markerSelectorPresent": true,
+        "bodyBg": "rgb(255, 255, 255)",
+        "themeTokenCount": 80
+      }
+    },
+    {
+      "name": "factory appearance clears the theme marker before baseline",
+      "pass": true,
+      "expected": "no body[data-dsh-neo-brutalist]",
+      "actual": false
+    },
+    {
+      "name": "baseline screenshot is non-blank",
+      "pass": true,
+      "expected": "distinctColors>=20 && stdDev>=2",
+      "actual": {
+        "distinctColors": 1666,
+        "stdDev": 37.12
+      }
+    },
+    {
+      "name": "light variant applies a theme marker (body attribute / background / token change)",
+      "pass": true,
+      "expected": "body matches body[data-dsh-neo-brutalist]",
+      "actual": {
+        "present": true,
+        "auto": true,
+        "extraAttrs": [
+          "data-dsh-neo-brutalist"
+        ],
+        "changedValueAttrs": [],
+        "bgChanged": false,
+        "styleChanged": true,
+        "selectorPresent": true
+      }
+    },
+    {
+      "name": "light variant sets body data-dsh-neo-brutalist",
+      "pass": true,
+      "expected": "attribute present with a value",
+      "actual": "paper"
+    },
+    {
+      "name": "light variant card reflects selected state",
+      "pass": true,
+      "expected": "aria-pressed=true",
+      "actual": true
+    },
+    {
+      "name": "light: border-radius contains \"0px\"",
+      "pass": true,
+      "expected": "0px",
+      "actual": "0px",
+      "detail": {
+        "selector": "[data-composer-card]"
+      }
+    },
+    {
+      "name": "light: box-shadow contains \"8px 8px 0\"",
+      "pass": true,
+      "expected": "8px 8px 0",
+      "actual": "rgb(0, 0, 0) 8px 8px 0px 0px",
+      "detail": {
+        "selector": "[data-composer-card]"
+      }
+    },
+    {
+      "name": "light: background-color matches \"rgb(255, 255, 255)\"",
+      "pass": true,
+      "expected": "rgb(255, 255, 255)",
+      "actual": "rgb(255, 255, 255)",
+      "detail": {
+        "selector": "[data-composer-card]"
+      }
+    },
+    {
+      "name": "light: body background-color matches \"rgb(255, 255, 255)\"",
+      "pass": true,
+      "expected": "rgb(255, 255, 255)",
+      "actual": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "light: body data-dsh-neo-brutalist=\"paper\"",
+      "pass": true,
+      "expected": "paper",
+      "actual": "paper"
+    },
+    {
+      "name": "light screenshot is non-blank",
+      "pass": true,
+      "expected": "distinctColors>=20 && stdDev>=2",
+      "actual": {
+        "distinctColors": 473,
+        "stdDev": 52.52
+      }
+    },
+    {
+      "name": "light variant visually changes the UI (baseline -> light)",
+      "pass": true,
+      "expected": "pixel diff ratio >= 0.001",
+      "actual": 0.49539,
+      "detail": {
+        "comparable": true,
+        "ratio": 0.49539,
+        "diffPixels": 642031,
+        "totalPixels": 1296000,
+        "from": "00-baseline-settings-1440x900.png",
+        "to": "01-light-settings-1440x900.png"
+      }
+    },
+    {
+      "name": "settings closed after light selection",
+      "pass": true,
+      "expected": "settings hidden",
+      "actual": true,
+      "soft": true
+    },
+    {
+      "name": "Settings → 通用 opened and plugin theme row is present",
+      "pass": true,
+      "expected": "row text \"Neo-Brutalist\"",
+      "actual": "present"
+    },
+    {
+      "name": "theme row variant cards classified",
+      "pass": true,
+      "expected": "light=\"白纸\", dark=\"黑板\", restore=\"出厂\"",
+      "actual": {
+        "light": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+        "dark": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+        "restore": "出厂外观恢复 DSH 内置主题"
+      }
+    },
+    {
+      "name": "variant cards matched by text (not positional fallback)",
+      "pass": true,
+      "expected": "both cards matched via env text patterns",
+      "actual": {
+        "lightExplicit": true,
+        "darkExplicit": true
+      },
+      "soft": true
+    },
+    {
+      "name": "dark variant keeps a theme marker active",
+      "pass": true,
+      "expected": "body matches body[data-dsh-neo-brutalist]",
+      "actual": {
+        "present": true,
+        "auto": true,
+        "extraAttrs": [
+          "data-dsh-neo-brutalist",
+          "data-ds-dark-theme"
+        ],
+        "changedValueAttrs": [],
+        "bgChanged": true,
+        "styleChanged": true,
+        "selectorPresent": true
+      }
+    },
+    {
+      "name": "dark variant sets body data-dsh-neo-brutalist to a distinct value",
+      "pass": true,
+      "expected": "different from light (\"paper\")",
+      "actual": "ink"
+    },
+    {
+      "name": "dark variant card reflects selected state",
+      "pass": true,
+      "expected": "aria-pressed=true",
+      "actual": true
+    },
+    {
+      "name": "dark: border-radius contains \"0px\"",
+      "pass": true,
+      "expected": "0px",
+      "actual": "0px",
+      "detail": {
+        "selector": "[data-composer-card]"
+      }
+    },
+    {
+      "name": "dark: box-shadow contains \"8px 8px 0\"",
+      "pass": true,
+      "expected": "8px 8px 0",
+      "actual": "rgb(204, 255, 0) 8px 8px 0px 0px",
+      "detail": {
+        "selector": "[data-composer-card]"
+      }
+    },
+    {
+      "name": "dark: body background-color matches \"rgb(0, 0, 0)\"",
+      "pass": true,
+      "expected": "rgb(0, 0, 0)",
+      "actual": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "dark: body data-dsh-neo-brutalist=\"ink\"",
+      "pass": true,
+      "expected": "ink",
+      "actual": "ink"
+    },
+    {
+      "name": "dark screenshot is non-blank",
+      "pass": true,
+      "expected": "distinctColors>=20 && stdDev>=2",
+      "actual": {
+        "distinctColors": 509,
+        "stdDev": 52.03
+      }
+    },
+    {
+      "name": "dark variant visually changes the UI (light -> dark)",
+      "pass": true,
+      "expected": "pixel diff ratio >= 0.001",
+      "actual": 0.99029,
+      "detail": {
+        "comparable": true,
+        "ratio": 0.99029,
+        "diffPixels": 1283421,
+        "totalPixels": 1296000,
+        "from": "01-light-settings-1440x900.png",
+        "to": "03-dark-settings-1440x900.png"
+      }
+    },
+    {
+      "name": "dark variant changes the page background versus light",
+      "pass": true,
+      "expected": "different body background",
+      "actual": {
+        "lightBg": "rgb(255, 255, 255)",
+        "darkBg": "rgb(0, 0, 0)"
+      },
+      "soft": true
+    },
+    {
+      "name": "settings closed after dark selection",
+      "pass": true,
+      "expected": "settings hidden",
+      "actual": true,
+      "soft": true
+    },
+    {
+      "name": "mobile screenshot has the required 390x844 viewport",
+      "pass": true,
+      "expected": "390x844",
+      "actual": "390x844"
+    },
+    {
+      "name": "mobile screenshot is non-blank",
+      "pass": true,
+      "expected": "distinctColors>=20 && stdDev>=2",
+      "actual": {
+        "distinctColors": 566,
+        "stdDev": 51.74
+      }
+    },
+    {
+      "name": "mobile layout renders the app at the mobile viewport",
+      "pass": true,
+      "expected": "390x844 shell screenshot",
+      "actual": {
+        "width": 390,
+        "height": 844,
+        "crossViewportDiff": {
+          "comparable": false,
+          "ratio": null,
+          "reason": "dimensions differ"
+        }
+      },
+      "soft": true
+    },
+    {
+      "name": "Settings → 通用 opened and plugin theme row is present",
+      "pass": true,
+      "expected": "row text \"Neo-Brutalist\"",
+      "actual": "present"
+    },
+    {
+      "name": "theme row variant cards classified",
+      "pass": true,
+      "expected": "light=\"白纸\", dark=\"黑板\", restore=\"出厂\"",
+      "actual": {
+        "light": "白纸 BRUTAL纯白底 · 黑框 · 酸绿主色",
+        "dark": "黑板 BRUTAL纯黑底 · 白框 · 荧光信号",
+        "restore": "出厂外观恢复 DSH 内置主题"
+      }
+    },
+    {
+      "name": "variant cards matched by text (not positional fallback)",
+      "pass": true,
+      "expected": "both cards matched via env text patterns",
+      "actual": {
+        "lightExplicit": true,
+        "darkExplicit": true
+      },
+      "soft": true
+    },
+    {
+      "name": "restore removes the theme marker from <body>",
+      "pass": true,
+      "expected": "body no longer matches body[data-dsh-neo-brutalist]",
+      "actual": {
+        "present": false,
+        "auto": false,
+        "extraAttrs": [],
+        "changedValueAttrs": [],
+        "bgChanged": false,
+        "styleChanged": false,
+        "selectorPresent": false
+      }
+    },
+    {
+      "name": "restore returns the page background to baseline",
+      "pass": true,
+      "expected": "rgb(255, 255, 255)",
+      "actual": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "restore returns the body token style attribute to baseline",
+      "pass": true,
+      "expected": "(identical)",
+      "actual": "--dsh-content-font-size: 14px; --dsh-code-font-size: 11px; --dsh-terminal-font-size: 13px;",
+      "soft": true
+    },
+    {
+      "name": "restore card reflects selected state",
+      "pass": true,
+      "expected": "aria-pressed=true",
+      "actual": true
+    },
+    {
+      "name": "restored screenshot is non-blank",
+      "pass": true,
+      "expected": "distinctColors>=20 && stdDev>=2",
+      "actual": {
+        "distinctColors": 1666,
+        "stdDev": 37.12
+      }
+    },
+    {
+      "name": "restore returns the UI to the baseline frame (pixel diff <= 1%)",
+      "pass": true,
+      "expected": "ratio <= 0.01",
+      "actual": 0.00148,
+      "detail": {
+        "comparable": true,
+        "ratio": 0.00148,
+        "diffPixels": 1920,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "name": "restore visibly reverts the shell (dark shell -> restored shell)",
+      "pass": true,
+      "expected": "pixel diff ratio >= 0.001",
+      "actual": 0.98963,
+      "detail": {
+        "comparable": true,
+        "ratio": 0.98963,
+        "diffPixels": 1282556,
+        "totalPixels": 1296000,
+        "from": "04-dark-shell-1440x900.png",
+        "to": "07-restored-shell-1440x900.png"
+      }
+    },
+    {
+      "name": "no browser console errors",
+      "pass": true,
+      "expected": "0 console.error messages",
+      "actual": []
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true,
+      "expected": "0 pageerror events",
+      "actual": []
+    },
+    {
+      "name": "computed-style expectations supplied",
+      "pass": false,
+      "expected": "all EXPECT_* envs set",
+      "actual": "skipped: dark.bg",
+      "soft": true
+    }
+  ],
+  "failures": [],
+  "error": null,
+  "passed": true,
+  "exitCode": 0
+}
